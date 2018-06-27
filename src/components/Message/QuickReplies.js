@@ -44,6 +44,8 @@ class QuickReplies extends Component {
     const { displayQuickReplies, showArrow } = this.state
     const { title, buttons } = content
 
+  // MU: removed from <Slider attributes : arrows={showArrow}, and variableWidth
+
     return (
       <div
         className="RecastAppQuickReplies"
@@ -55,8 +57,6 @@ class QuickReplies extends Component {
 
         {displayQuickReplies && buttons && !!buttons.length && (
           <Slider
-            arrows={showArrow}
-            variableWidth
             speed={200}
             infinite={false}
             draggable={false}
