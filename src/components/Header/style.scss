@@ -12,18 +12,26 @@
   &--title {
     font-weight: bold;
     flex-grow: 1;
+    line-height: 1.2;
   }
 
   &--btn {
     cursor: pointer;
     margin: 1rem;
-    width: 15px;
-    height: 15px;
+    // width: 15px; // MU: commented
+    // height: 15px; // MU: commented
+    > a { // MU: added
+      color: white;
+      font-size: 80%;
+      text-decoration: none;
+    }
   }
 }
 
-@media only screen and (min-width: 420px) and (min-height: 575px) {
+@media only screen and (min-width: 767px) {
   .RecastApp .RecastAppHeader {
     border-radius: 3px 3px 0 0;
+    .close { display: none; }
   }
+
 }

@@ -12,11 +12,13 @@
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  margin: 1rem 0.5rem;
+  margin: 0.5rem 1rem 0.5rem 0rem; // MU: modified (was: margin: 1rem 0.5rem;)
   width: -webkit-fit-content;
   width: fit-content;
   width: -moz-fit-content;
   position: relative;
+  line-height: 150%; // MU: modified
+  flex-grow: 1; // MU:added
 
   &--logo {
     width: 35px;
@@ -74,7 +76,7 @@
 
   .RecastAppSlider,
   .Slider {
-    max-width: 300px;
+    max-width: 430px; // MU: modified (was: 300px)
 
     .Arrow {
       width: 25px;
@@ -125,7 +127,7 @@
    */
 
   .RecastAppText {
-    max-width: 290px;
+    max-width: 400px; // MU: modified (was: 270px)
     padding: 0.8rem;
     border-radius: 3px;
 
@@ -138,7 +140,8 @@
    */
 
   .RecastAppPicture {
-    width: 270px;
+    // width: 270px; // MU: commented
+    max-width: 400px; // MU: added
     max-height: 270px;
 
     border-radius: 3px;
@@ -155,7 +158,8 @@
 
     &--slider {
       margin-top: 0.5rem;
-      max-width: 290px;
+      margin-bottom: 0.5rem; // MU: added
+      max-width: 420px; // MU: modified (was: 290px)      
     }
 
     &--button {
@@ -163,6 +167,7 @@
       align-items: center;
       justify-content: center;
 
+      width: initial !important; // MU: added
       max-height: 30px;
       padding: 1rem;
       margin-left: 0.5rem;
@@ -177,13 +182,15 @@
    * Buttons
    */
   .Buttons {
-    width: 270px;
+    // width: 270px; // MU: commented
+    max-width: 400px; // MU: added
+    width: 90%; // MU: added
     border: 1px solid lightgrey;
     border-radius: 3px;
 
     &--title {
-      max-width: 270px;
-      padding: 0.8rem;
+      max-width: 400px; // MU: modified (was: 270px)
+      padding: 1.5rem; // MU: modified (was 0.8rem)
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
 
@@ -192,6 +199,7 @@
     }
 
     &--container {
+      max-width: 400px; // MU: added
       border-top: 1px solid lightgrey;
     }
   }
@@ -201,9 +209,11 @@
    */
 
   .RecastAppCard {
-    width: 270px;
-
-    border: 1px solid lightgrey;
+    // width: 270px; // MU: commented
+    max-width: 400px; // MU: added
+    background-color: #F2F2F2; // MU: added
+    color: #6f7076; // MU: added
+    
     border-radius: 3px;
 
     &--img {
@@ -218,7 +228,7 @@
       padding: 0.4rem;
 
       &-title {
-        font-weight: bold;
+        // font-weight: bold; // MU: commented
       }
 
       &-subtitle {
@@ -229,6 +239,8 @@
 
     &--button-container {
       border-top: 1px solid lightgrey;
+      border: 1px solid lightgrey;
+      background-color: white;
     }
   }
 
@@ -282,7 +294,7 @@
         cursor: pointer;
         font-size: 14px;
         font-weight: bold;
-        color: cornflowerblue;
+        color: #c79d4c; // MU: modified (was cornflowerblue)
         text-decoration: none;
       }
     }

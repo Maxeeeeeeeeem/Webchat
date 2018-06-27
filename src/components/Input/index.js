@@ -67,7 +67,7 @@ class Input extends Component {
           ref={i => (this._input = i)}
           value={value}
           style={{ width: '100%', maxHeight: 70, resize: 'none' }}
-          placeholder={'Write a reply...'}
+          placeholder={'Répondre ...'} // MU: modified (was: Write a reply)
           onChange={e => this.setState({ value: e.target.value }, this.autoGrow)}
           onKeyPress={e => {
             if (e.key === 'Enter') {

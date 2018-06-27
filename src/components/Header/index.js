@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 
 import './style.scss'
 
+// MU: replaced close button by clear button :
+
 const Header = ({ closeWebchat, preferences, logoStyle }) => (
   <div
     className="RecastAppHeader"
@@ -15,8 +17,12 @@ const Header = ({ closeWebchat, preferences, logoStyle }) => (
 
     <div className="RecastAppHeader--title">{preferences.headerTitle}</div>
 
-    <div className="RecastAppHeader--btn" onClick={closeWebchat}>
-      <img src="https://cdn.recast.ai/webchat/close.svg" />
+    <div className="RecastAppHeader--btn">
+      <a href="/sessions/clear_conversation" title="Effacer votre conversation avec Edmon">Effacer</a>
+    </div>
+
+    <div className="RecastAppHeader--btn close" onClick={closeWebchat}>
+      <b>x</b>
     </div>
   </div>
 )

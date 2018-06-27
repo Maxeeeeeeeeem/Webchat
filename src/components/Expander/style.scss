@@ -1,7 +1,20 @@
 .RecastApp .RecastAppExpander {
+
+  // MU: added
+  height: 60px; 
+  justify-content: center;
+  z-index: 10342342423242342345345352342234234;
+  @media only screen and (max-width: 767px) { 
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+  // \ MU: added
+
+
   position: fixed;
-  right: 10px;
-  bottom: 10px;
+  right: 30px; // MU: modified (was 10px) 
+  bottom: 30px; // MU: modified (was 10px) 
   display: flex;
   align-items: center;
 

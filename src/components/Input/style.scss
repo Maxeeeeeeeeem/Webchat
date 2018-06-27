@@ -1,16 +1,18 @@
 .RecastApp .RecastAppInput {
-  // position: absolute;
+  position: absolute; // MU: uncommented
   bottom: 0;
   width: 100%;
 
   padding: 1rem;
-  color: grey;
+  color: #6f7076; // MU :modified (was: grey)
   background: white;
-  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16);
+  border-top: 1px solid #c79d4c; // MU: added
+  // box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16); // MU: commented
 }
 
-@media only screen and (min-width: 420px) and (min-height: 575px) {
+@media only screen and (min-width: 767px) { // MU : modified 420px => 768px
   .RecastApp .RecastAppInput {
     position: relative;
+    bottom: 1px; // MU: modified (was: 0 => prevent added border)
   }
 }

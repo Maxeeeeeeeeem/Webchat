@@ -1,5 +1,5 @@
 .RecastApp .RecastAppChat {
-  position: fixed;
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
@@ -23,6 +23,7 @@
 
   &--content {
     position: relative;
+    height: calc(100% - 50px);
   }
 
   &--slogan {
@@ -49,16 +50,17 @@
   }
 }
 
-@media only screen and (min-width: 420px) and (min-height: 575px) {
+@media only screen and (min-width: 767px) {  // MU : modified 420px => 768px
   .RecastApp .RecastAppChat {
-    right: 10px;
-    bottom: 10px;
+    position: relative; // MU: added
+    // right: 10px; // MU: commented
+    // bottom: 10px; // MU: commented
     border-radius: 3px;
-    top: auto;
-    left: auto;
-    width: 370px;
-    height: auto;
-    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16);
+    // top: auto; // MU: commented
+    // left: auto; // MU: commented
+    // width: 370px; // MU: commented
+    height: calc(100vh - 80px); // MU: modified (was auto)
+    // box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16); // MU: commented
 
     &--slogan {
       margin-bottom: 0;

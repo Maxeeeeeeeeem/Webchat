@@ -7,7 +7,7 @@ import './style.scss'
 
 const Button = ({ button, sendMessage }) => {
   const { value, title } = button
-  const formattedTitle = truncate(title, 20)
+  const formattedTitle = truncate(title, 50) // MU: modified (was 20)
 
   let content = null
 
